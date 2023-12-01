@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 const appRouter = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/skills",
+    element: <Skills />,
   },
 ]);
 

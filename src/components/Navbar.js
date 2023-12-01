@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <div className="w-full shadow-xl fixed top-0 left-0 font-serif">
-        <div className="md:flex justify-between items-center bg-[#181818] p-2 text-white">
+        <div className="md:flex justify-between items-center bg-[#171721] p-2 text-white shadow-xl">
           <div className="flex mx-2 items-center gap-2">
             <span className="animate-spin">
               <SiReactos size={25} />

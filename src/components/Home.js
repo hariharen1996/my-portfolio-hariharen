@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="font-serif bg-[#1c1c27] w-screen flex justify-center items-center min-h-screen text-white  pt-20 pb-20">
+      <div className="font-serif bg-[#171730] w-screen flex justify-center items-center min-h-screen text-white  pt-20 pb-20">
         <div className="text-start md:text-center  w-full mx-2 md:w-8/12 bg-[#171721] p-10 rounded-md shadow-lg shadow-indigo-200/40 hover:transition-all">
           <h1 className="text-4xl lg:text-5xl my-2 pb-2">
             Hey 👋, I am <span>Hariharen</span>
