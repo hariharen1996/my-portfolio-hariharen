@@ -3,7 +3,7 @@ import { SiReactos } from "react-icons/si";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { Link, NavLink, Outlet } from "react-router-dom";
-import { navItems } from "../utils/constants";
+import { navItems } from "../utils/navconstants";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="w-full shadow-xl fixed top-0 left-0 font-serif">
         <div className="md:flex justify-between items-center bg-[#171721] p-2 text-white shadow-xl">
           <div className="flex mx-2 items-center gap-2">
-            <span className="animate-spin">
+            <span>
               <SiReactos size={25} />
             </span>
             <h1>Hariharen</h1>
