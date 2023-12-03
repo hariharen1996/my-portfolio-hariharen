@@ -21,7 +21,7 @@ export const navItems = [
   },
   {
     id: 5,
-    path: "/contact",
-    pathname: "Contact",
+    path: "/certificate",
+    pathname: "Certificates",
   },
 ];

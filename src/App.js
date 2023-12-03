@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
+import PortfolioDetails from "./pages/PortfolioDetails";
+import Certificates from "./components/Certificate";
 
 const appRouter = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const appRouter = createBrowserRouter([
   {
     path: "/portfolio",
     element: <Portfolio />,
+  },
+  {
+    path: "/portfolio-details/:id",
+    element: <PortfolioDetails />,
+  },
+  {
+    path: "/certificate",
+    element: <Certificates />,
   },
 ]);
 

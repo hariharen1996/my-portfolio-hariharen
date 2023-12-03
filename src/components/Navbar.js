@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { SiReactos } from "react-icons/si";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { navItems } from "../utils/navconstants";
 
 const Navbar = () => {
