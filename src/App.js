@@ -1,43 +1,73 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Portfolio from "./components/Portfolio";
-import PortfolioDetails from "./pages/PortfolioDetails";
-import Certificates from "./components/Certificate";
+import { Suspense, lazy } from "react";
+import FallbackLoad from "./components/FallbackLoad";
+import Layout from "./components/Layout";
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/skills",
-    element: <Skills />,
-  },
-  {
-    path: "/portfolio",
-    element: <Portfolio />,
-  },
-  {
-    path: "/portfolio-details/:id",
-    element: <PortfolioDetails />,
-  },
-  {
-    path: "/certificate",
-    element: <Certificates />,
-  },
-]);
+const Home = lazy(() => import("./components/Home"));
+const About = lazy(() => import("./components/About"));
+const Skills = lazy(() => import("./components/Skills"));
+const Portfolio = lazy(() => import("./components/Portfolio"));
+const PortfolioDetails = lazy(() => import("./pages/PortfolioDetails"));
+const Certificates = lazy(() => import("./components/Certificate"));
 
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={appRouter} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route
+              index
+              element={
+                <Suspense fallback={<FallbackLoad />}>
+                  <Home />
+                </Suspense>
+              }
+            />
+            <Route
+              path="about"
+              element={
+                <Suspense fallback={<FallbackLoad />}>
+                  <About />
+                </Suspense>
+              }
+            />
+            <Route
+              path="skills"
+              element={
+                <Suspense fallback={<FallbackLoad />}>
+                  <Skills />
+                </Suspense>
+              }
+            />
+            <Route
+              path="portfolio"
+              element={
+                <Suspense fallback={<FallbackLoad />}>
+                  <Portfolio />
+                </Suspense>
+              }
+            />
+            <Route
+              path="portfolio-details/:id"
+              element={
+                <Suspense fallback={<FallbackLoad />}>
+                  <PortfolioDetails />
+                </Suspense>
+              }
+            />
+            <Route
+              path="certificate"
+              element={
+                <Suspense fallback={<FallbackLoad />}>
+                  <Certificates />
+                </Suspense>
+              }
+            />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

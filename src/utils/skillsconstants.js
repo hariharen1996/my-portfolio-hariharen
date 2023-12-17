@@ -5,7 +5,6 @@ import {
   SiRedux,
   SiSqlite,
   SiFirebase,
-  SiTestinglibrary,
   SiJira,
   SiTailwindcss,
 } from "react-icons/si";
@@ -80,18 +79,12 @@ export const tools = [
   },
   {
     id: 3,
-    text: "Jest",
-    icons: <SiTestinglibrary size={30} />,
-    color: "bg-red-700",
-  },
-  {
-    id: 4,
     text: "Jira",
     icons: <SiJira size={30} />,
     color: "bg-blue-700",
   },
   {
-    id: 5,
+    id: 4,
     text: "TailwindCSS",
     icons: <SiTailwindcss size={30} />,
     color: "bg-blue-700",

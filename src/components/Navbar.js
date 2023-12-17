@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { SiReactos } from "react-icons/si";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { navItems } from "../utils/navconstants";
 
 const Navbar = () => {
@@ -16,12 +16,15 @@ const Navbar = () => {
     <>
       <div className="w-full shadow-xl fixed top-0 left-0 font-serif">
         <div className="md:flex justify-between items-center bg-[#171721] p-2 text-white shadow-xl">
-          <div className="flex mx-2 items-center gap-2">
-            <span>
-              <SiReactos size={25} />
-            </span>
-            <h1>Hariharen</h1>
-          </div>
+          <Link to="/">
+            <div className="flex mx-2 items-center gap-2">
+              <span>
+                <SiReactos size={25} />
+              </span>
+              <h1>Hariharen</h1>
+            </div>
+          </Link>
+
           <div
             className="absolute mx-2 right-3 top-2 cursor-pointer md:hidden"
             onClick={changeMenu}

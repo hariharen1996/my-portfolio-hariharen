@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProjectCard from "../pages/ProjectCard";
 import { projects, tabBtns } from "../utils/projconstants";
-import Navbar from "./Navbar";
+import Loading from "./Loading";
 
 const Portfolio = () => {
   const [activeTabs, setActiveTabs] = useState(tabBtns[0].text);
@@ -9,8 +9,6 @@ const Portfolio = () => {
   const handleTabs = (text) => {
     setActiveTabs(text);
   };
-
-  console.log(activeTabs);
 
   const filteredData = () => {
     const projectLists = projects.filter(
@@ -23,30 +21,34 @@ const Portfolio = () => {
     }
   };
 
-  console.log(filteredData());
-
   return (
     <div>
-      <Navbar />
       <div className="font-serif bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
-        <div className="flex justify-center items-center gap-2">
+        <div className="mx-2 flex flex-wrap justify-center items-center gap-2">
           {tabBtns.map((btn) => (
             <div key={btn.id}>
               <button
                 onClick={() => handleTabs(btn.text)}
-                className="cursor-pointer bg-cyan-700 px-3 p-2 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-80"
+                className={`${
+                  btn.text === activeTabs
+                    ? "bg-cyan-700"
+                    : "border border-cyan-700"
+                } cursor-pointer px-3 p-2 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-80 text-sm`}
               >
                 {btn.btnName}
               </button>
             </div>
           ))}
         </div>
-
-        <div className="my-10 flex justify-center items-start items-stretch flex-wrap gap-5">
-          {filteredData().map((items) => (
-            <ProjectCard items={items} key={items.id} />
-          ))}
-        </div>
+        {filteredData().length === 0 ? (
+          <Loading />
+        ) : (
+          <div className="my-10 mx-2 flex justify-center items-start items-stretch flex-wrap gap-5">
+            {filteredData().map((items) => (
+              <ProjectCard items={items} key={items.id} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

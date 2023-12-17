@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <div className="font-serif bg-[#171730] w-screen flex justify-center items-center min-h-screen text-white  pt-20 pb-20">
         <div className="text-start md:text-center  w-full mx-2 md:w-8/12 bg-[#171721] p-10 rounded-md shadow-lg shadow-indigo-200/40 hover:transition-all">
           <h1 className="text-4xl lg:text-5xl my-2 pb-2">
@@ -27,7 +25,7 @@ const Home = () => {
             connect and explore the world of code together. I'm always eager to
             explore new opportunities and contribute to exciting projects.
           </p>
-          <Link to="/contact">
+          <Link to="https://www.linkedin.com/in/hariharen96/" target="_blank">
             <button className="px-3 text-sm my-2 md:px-6 p-2 rounded-lg  bg-cyan-900  hover:border border-white">
               Let's connect
             </button>

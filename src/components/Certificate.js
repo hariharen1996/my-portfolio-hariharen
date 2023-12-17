@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { accCert, langOptions } from "../utils/constants";
 import { useState } from "react";
 import CertContainer from "../pages/CertContainer";
@@ -21,11 +20,8 @@ const Certificates = () => {
     }
   };
 
-  console.log(filteredCertificate());
-
   return (
     <div>
-      <Navbar />
       <div className="font-serif bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
         <h1 className="text-2xl my-3 md:text-3xl text-center underline">
           Certificates

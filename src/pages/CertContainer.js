@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
+import { MagnifyingGlass } from "react-loader-spinner";
 import { Link } from "react-router-dom";
 
 const CertContainer = ({ item, showCert, setShowCert }) => {
@@ -16,13 +17,26 @@ const CertContainer = ({ item, showCert, setShowCert }) => {
       </div>
       {showCert && (
         <Link to={item?.certLink} target="_blank">
-          <img
-            src={item.imageURL}
-            alt={item.title}
-            className={`w-full object-cover my-5 ${
-              item.certLink ? "cursor-pointer" : "cursor-default"
-            }`}
-          />
+          {!item.imageURL ? (
+            <MagnifyingGlass
+              visible={true}
+              height="80"
+              width="80"
+              ariaLabel="MagnifyingGlass-loading"
+              wrapperStyle={{}}
+              wrapperClass="MagnifyingGlass-wrapper"
+              glassColor="#c0efff"
+              color="#e15b64"
+            />
+          ) : (
+            <img
+              src={item.imageURL}
+              alt={item.title}
+              className={`w-full object-cover my-5 ${
+                item.certLink ? "cursor-pointer" : "cursor-default"
+              }`}
+            />
+          )}
         </Link>
       )}
     </div>

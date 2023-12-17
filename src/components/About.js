@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { education, training } from "../utils/educonstants";
 import { experience, volunteerExperience } from "../utils/expconstants";
 import AboutContainer from "../pages/AboutContainer";
@@ -7,7 +6,6 @@ import AboutContainer from "../pages/AboutContainer";
 const About = () => {
   return (
     <div>
-      <Navbar />
       <div className="font-serif bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
         <AboutContainer title={"Work Experince"} details={experience} />
         <AboutContainer

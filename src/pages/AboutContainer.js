@@ -42,7 +42,10 @@ const AboutContainer = ({ title, details }) => {
                 {items.skills && (
                   <div className="flex items-start flex-wrap gap-2 mt-3">
                     {items.skills.map((item) => (
-                      <button className="p-1 bg-cyan-700 text-xs rounded-md text-white">
+                      <button
+                        key={item}
+                        className="p-1 bg-cyan-700 text-xs rounded-md text-white"
+                      >
                         {item}
                       </button>
                     ))}
