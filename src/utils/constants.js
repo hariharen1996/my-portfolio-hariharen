@@ -161,3 +161,6 @@ export const langOptions = [
     langText: "Git",
   },
 ];
+
+export const LINKEDIN_URL = "https://www.linkedin.com/in/hariharen96/";
+export const GITHUB_URL = "https://github.com/hariharen1996";

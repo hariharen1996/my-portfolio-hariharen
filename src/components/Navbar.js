@@ -51,6 +51,7 @@ const Navbar = () => {
                 }}
                 to={nav.path}
                 key={nav.id}
+                onClick={() => setShowMenu(false)}
               >
                 <li>{nav.pathname}</li>
               </NavLink>
