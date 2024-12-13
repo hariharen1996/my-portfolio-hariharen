@@ -56,12 +56,6 @@ export const backEnd = [
     icons: <SiSqlite size={30} />,
     color: "bg-gray-700",
   },
-  {
-    id: 3,
-    text: "Firebase",
-    icons: <SiFirebase size={30} />,
-    color: "bg-yellow-700",
-  },
 ];
 
 export const tools = [
@@ -73,20 +67,8 @@ export const tools = [
   },
   {
     id: 2,
-    text: "GitHub",
-    icons: <FaGithub size={30} />,
-    color: "bg-black",
-  },
-  {
-    id: 3,
     text: "Jira",
     icons: <SiJira size={30} />,
-    color: "bg-blue-700",
-  },
-  {
-    id: 4,
-    text: "TailwindCSS",
-    icons: <SiTailwindcss size={30} />,
     color: "bg-blue-700",
   },
 ];

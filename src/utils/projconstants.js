@@ -6,52 +6,48 @@ export const tabBtns = [
   },
   {
     id: 2,
-    btnName: "Static",
-    text: "STATIC",
-  },
-  {
-    id: 3,
     btnName: "Javascript",
     text: "JAVASCRIPT",
   },
   {
-    id: 4,
+    id: 3,
     btnName: "ReactJS",
     text: "REACT",
-  },
+  },  
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "Todos Application",
+    title: "Shopfy Application",
     image:
-      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701501959/qexizgnklztehrc3oqdd.png",
-    techStach: ["HTML", "CSS", "Javascript", "Bootstrap"],
+      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1734096400/shopfy-img_nlcpi0.png",
+    techStach: ["HTML", "CSS", "Javascript","ES5+","Parcel"],
     category: "JAVASCRIPT",
     description: [
-      "Developed persistent todo application with CRUD operations to track list of tasks",
-      "Displayed list of todos with HTML list elements, styled todo list using CSS, Bootstrap",
-      "Implemented todo crud operations by using JavaScript event listeners and updated UI dynamically by using JavaScript DOM operations.",
-      "Used Arrays, Objects and their methods during todolist CRUD Operations, Persisted todo list state on page reloads using local storage methods",
+      "Shopfy is a dynamic and user-friendly eCommerce website designed to provide a seamless shopping experience",
+      "The platform allows users to browse products, filter through search options, and easily add items to their cart.",
+      "Product Search Filters: Users can efficiently search for products using a variety of filters, including: Radio Buttons, Checkboxes, SearchInput.",
+      "Login and Register functionality for creating and managing user accounts.",
     ],
-    github: "https://github.com/hariharen1996/todoapplication",
-    projectLink: "https://hariharentodoap.ccbp.tech/",
+    github: "https://github.com/hariharen1996/Shopfy",
+    projectLink: "https://shopfy-ecommerce.netlify.app/",
   },
   {
     id: 2,
-    title: "Countries Search Application",
+    title: "Forkify Application",
     image:
-      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701509033/xulg8rdmo8ed8vlfd88w.png",
-    techStach: ["HTML", "CSS", "Javascript", "Bootstrap", "REST API CALL"],
+      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1734096923/fokify-img_lkohkq.png",
+    techStach: ["HTML", "CSS", "Javascript", "Bootstrap", "REST API CALL","Parcel"],
     category: "JAVASCRIPT",
     description: [
-      "Developed responsive countries search application which shows all countries and respective population in the world",
-      "We can also search by specific country Fetched countries list from server asynchronously using fetch GET HTTP API call and implemented responsiveness using Bootstrap grid system and CSS box model.",
-      "Implemented local search functionality by using input element, JavaScript event listeners & filtered countries using Array filter method.",
+      "The forkify is an Recipe App and is used to help users discover, save, and create their favorite recipes.",
+      "This app leverages the Forkify API to provide a diverse collection of recipes, along with features that allow users to bookmark, search, and even add their own custom recipes..",
+      "Save your favorite recipes for quick access anytime. Manage your saved recipes easily within the app..",
+      " Built with Bootstrap, the app is fully responsive, ensuring a seamless experience across desktop, tablet, and mobile devices.",
     ],
-    github: "https://github.com/hariharen1996/countries-search",
-    projectLink: "https://hariharencs.ccbp.tech/",
+    github: "https://github.com/hariharen1996/forkify",
+    projectLink: "https://forkifyrecapp.netlify.app/",
   },
   {
     id: 3,
@@ -73,30 +69,6 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Netflix Clone",
-    image:
-      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1702647203/netflix-clone_vhadmx.png",
-    techStach: [
-      "ReactJS",
-      "ReduxToolkit",
-      "Javascript",
-      "TaiwindCSS",
-      "TMDB API",
-      "Firebase",
-    ],
-    category: "REACT",
-    description: [
-      "Netflix clone is a full-fledged streaming platform designed to emulate the key features and user experience of Netflix",
-      "Implemented username and password authentication using firebase",
-      "Added Search Bar, where users can search for an particular movies",
-      "Implemented the app as responsive website using tailwindcss",
-      "Fetched movies data using TMDB API",
-    ],
-    github: "https://github.com/hariharen1996/netflixGPT",
-    projectLink: "https://hariharenetflix.netlify.app/",
-  },
-  {
-    id: 5,
     title: "NxtWatch - Youtube Clone",
     image:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1702647208/nxtwatch_hqol5w.png",
@@ -121,70 +93,12 @@ export const projects = [
     projectLink: "https://hariharenxtwatch.netlify.app/",
   },
   {
-    id: 6,
-    title: "Food Munch Website",
-    image:
-      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701516461/gxfir5lhrik4hwkk9kjh.png",
-    techStach: ["HTML", "CSS", "Bootstrap"],
-    category: "STATIC",
-    description: [
-      "Developed a responsive website for Food Store where users can see a list of food items, detailed information about a food item.",
-      "It offers Designed page using following HTML structure elements like li, header, article, footer elements and different bootstrap components to show different sections in the website and different bootstrap classes for responsiveness through mobile-first approach.",
-    ],
-    github: "https://github.com/hariharen1996/foodmunchwebsite",
-    projectLink: "https://hariharenfmw.ccbp.tech/",
-  },
-  {
-    id: 7,
-    title: "E-commerce Website",
-    image:
-      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701516545/whbnbbd2p5pbwggoolrv.png",
-    techStach: ["HTML", "CSS", "Bootstrap"],
-    category: "STATIC",
-    description: [
-      "Developed E Commerce website where users can go through different products, detailed information about a product, offers and contact us info.",
-      " Designed page using following HTML structure elements and footer elements by using different bootstrap components to show different sections in the website and different bootstrap classes for responsiveness through mobile-first approach.",
-      "Implemented product youtube videos by using bootstrap embed and model components and displayed multiple images of offers in a carousel using bootstrap carousel.",
-    ],
-    github: "https://github.com/hariharen1996/ecommerce-website.git",
-    projectLink: "https://hariharenecom.ccbp.tech/",
-  },
-  {
-    id: 8,
-    title: "Tourism Website",
-    image:
-      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1675670234/tourism-website_mdpfrh.png",
-    techStach: ["HTML", "CSS", "Bootstrap"],
-    category: "STATIC",
-    description: [
-      "A tourism website where users can browse through the content, videos and images of popular destinations.",
-      "Implemented mobile friendly layout using different HTML block, inline elements, and Styled using CSS3 properties such as background, flex, and CSS box model properties.",
-      "Implemented multiple images of a particular destination in a carousel using bootstrap carousel and virtual tour videos using bootstrap embed component",
-    ],
-    github: "https://github.com/hariharen1996/tourism-website",
-    projectLink: "https://hariharentour.ccbp.tech/",
-  },
-  {
-    id: 9,
-    title: "Virtual Reality Website",
-    image:
-      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1675959457/virtualreality_bfcv3u.png",
-    techStach: ["HTML", "CSS", "Bootstrap"],
-    category: "STATIC",
-    description: [
-      "Developed a responsive website for VR products where user can see list of products, detailed information about a product and trending blogs, contact us info Designed page using HTML structure elements ,footer elements by using different bootstrap components to show different sections in the website.",
-      "Implemented responsiveness by using Bootstrap grid system and flex classes and CSS box model properties through mobile-first approach.",
-    ],
-    github: "https://github.com/hariharen1996/vrwebsite.git",
-    projectLink: "https://hariharenvr.ccbp.tech/",
-  },
-  {
-    id: 10,
-    title: "Wikipedia-Search",
+    id: 5,
+    title: "Wikipedia-Search Application",
     image:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1676119181/wikipedia_xr7xjc.png",
     github: "https://github.com/hariharen1996/wikipedia-application.git",
-    projectLink: "https://hariharenws.ccbp.tech/",
+    projectLink: "https://hariharenwsapp.ccbp.tech/",
     category: "JAVASCRIPT",
     techStach: ["HTML", "CSS", "Bootstrap", "REST API Calls"],
     description: [

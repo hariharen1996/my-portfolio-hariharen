@@ -15,15 +15,6 @@ export const accCert = [
   },
   {
     id: 3,
-    title: "Namaste React",
-    imageURL:
-      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701594986/i1ludjcztofni0aojk7n.jpg",
-    certLink: "https://namastedev.com/namaste-react/learnings",
-    certName: "Namaste React",
-  },
-
-  {
-    id: 4,
     title: "Python - NxtWave Disruptive Technologies",
     imageURL:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701591738/uuuoorq2mhqtxoybjmwb.jpg",
@@ -32,7 +23,7 @@ export const accCert = [
     certName: "Python",
   },
   {
-    id: 5,
+    id: 4,
     title: "SQLite - NxtWave Disruptive Technologies",
     imageURL:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701592534/zhxlp1ubohh0g29umfhm.jpg",
@@ -41,7 +32,7 @@ export const accCert = [
     certName: "SQLite",
   },
   {
-    id: 6,
+    id: 5,
     title: "Static Website HTML - NxtWave Disruptive Technologies",
     imageURL:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701592549/fl173sachucgmkcxpyw6.jpg",
@@ -51,7 +42,7 @@ export const accCert = [
   },
 
   {
-    id: 7,
+    id: 6,
     title: "CSS Responsive - NxtWave Disruptive Technologies",
     imageURL:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701592572/tbaisi1j0boxtg2di6vr.jpg",
@@ -61,7 +52,7 @@ export const accCert = [
   },
 
   {
-    id: 8,
+    id: 7,
     title: "CSS Flexbox - NxtWave Disruptive Technologies",
     imageURL:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701592565/mjm6wwfgnhaceztudgft.jpg",
@@ -69,7 +60,7 @@ export const accCert = [
     certName: "CSS Flexbox",
   },
   {
-    id: 9,
+    id: 8,
     title: "Dynamic Javascript - NxtWave Disruptive Technologies",
     imageURL:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701592606/tt1zxxhxkqwohdmifyu4.jpg",
@@ -79,7 +70,7 @@ export const accCert = [
   },
 
   {
-    id: 10,
+    id: 9,
     title: "Javascript Essentials - NxtWave Disruptive Technologies",
     imageURL:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701592597/am8w3oitwhea2erlx2ed.jpg",
@@ -88,7 +79,7 @@ export const accCert = [
     certName: "Javascript Essentials",
   },
   {
-    id: 11,
+    id: 10,
     title: "ReactJS - NxtWave Disruptive Technologies",
     imageURL:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701592614/evwby1yuxtcy2pr1kxnz.jpg",
@@ -97,7 +88,7 @@ export const accCert = [
   },
 
   {
-    id: 12,
+    id: 11,
     title: "Git - NxtWave Disruptive Technologies",
     imageURL:
       "https://res.cloudinary.com/dhr74n4vu/image/upload/v1701592589/ruitznrdcxknwlhed1al.jpg",
@@ -122,42 +113,38 @@ export const langOptions = [
   },
   {
     id: 4,
-    langText: "Namaste React",
-  },
-  {
-    id: 5,
     langText: "Python",
   },
   {
-    id: 6,
+    id: 5,
     langText: "SQLite",
   },
   {
-    id: 7,
+    id: 6,
     langText: "HTML",
   },
   {
-    id: 8,
+    id: 7,
     langText: "CSS Responsive",
   },
   {
-    id: 9,
+    id: 8,
     langText: "CSS Flexbox",
   },
   {
-    id: 10,
+    id: 9,
     langText: "Dynamic Javascript",
   },
   {
-    id: 11,
+    id: 10,
     langText: "Javascript Essentials",
   },
   {
-    id: 12,
+    id: 11,
     langText: "ReactJS",
   },
   {
-    id: 13,
+    id: 12,
     langText: "Git",
   },
 ];
