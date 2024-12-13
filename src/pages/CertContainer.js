@@ -16,7 +16,7 @@ const CertContainer = ({ item, showCert, setShowCert }) => {
         </button>
       </div>
       {showCert && (
-        <Link to={item?.certLink} target="_blank">
+        <div>
           {!item.imageURL ? (
             <MagnifyingGlass
               visible={true}
@@ -32,12 +32,10 @@ const CertContainer = ({ item, showCert, setShowCert }) => {
             <img
               src={item.imageURL}
               alt={item.title}
-              className={`w-full object-cover my-5 ${
-                item.certLink ? "cursor-pointer" : "cursor-default"
-              }`}
+              className="w-full object-cover my-5"
             />
           )}
-        </Link>
+        </div>
       )}
     </div>
   );

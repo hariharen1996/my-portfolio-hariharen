@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className=" flex flex-wrap shadow-lg gap-2 justify-center items-center bg-[#171721] p-2 text-center">
       <p className="text-white font-serif text-sm sm:text-md">
-        Created by &copy; Hariharen | 2023{" "}
+        Created by &copy; Hariharen | 2024{" "}
       </p>
       <div className="flex gap-2">
         <Link to={GITHUB_URL} target="_blank">
