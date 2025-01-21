@@ -14,6 +14,12 @@ export const tabBtns = [
     btnName: "ReactJS",
     text: "REACT",
   },  
+  {
+    id: 4,
+    btnName: "Django",
+    text: "DJANGO",
+  },  
+  
 ];
 
 export const projects = [
@@ -106,6 +112,28 @@ export const projects = [
       "Displayed list of search results with HTML list elements with hyperlink as url, styled list using CSS, Bootstrap and implemented responsiveness using Flex properties and CSS Box model.",
       "Fetched search results from server asynchronously using fetch GET HTTP API call.",
       "When a user clicks on a particular result, opens the website in a new tab by using the target attribute of the anchor tag in HTML.",
+    ],
+  },
+  {
+    id: 6,
+    title: "JobSphere",
+    image:
+      "https://res.cloudinary.com/dhr74n4vu/image/upload/v1737351646/jobsphere_qjsbnf.png",
+    github: "https://github.com/hariharen1996/jobsphere",
+    projectLink: "https://hariharenwsapp.ccbp.tech/",
+    category: "DJANGO",
+    techStach: ["HTML", "CSS", "Bootstrap", "Django RestFramework","Django","Python","JWT Authentication","Pandas","Javascript","Jinja","MVT"],
+    description: [
+      "JobSphere is a comprehensive and user-friendly job portal platform designed to connect employers and job seekers. With a focus on ease of use, advanced search capabilities, and seamless interaction, JobSphere offers an innovative way for job applicants to discover career opportunities and for employers to manage job postings, recruit talent, and foster engagement with potential candidates",
+      "Secure login and registration system using JSON Web Tokens (JWT) for authentication, ensuring that both employers and job seekers can easily and securely access their accounts. This authentication mechanism is powered by Django REST API, offering a scalable backend solution.",
+      "Users can create and manage personalized profiles. Job seekers can build their profiles with details like qualifications, experience, and skills, while employers can manage their company profiles, job listings, and recruitment needs.",
+      "Job seekers can easily search for job opportunities based on a variety of criteria such as location, salary range, required experience, date of posting, and work mode (e.g., remote, on-site, hybrid). The intelligent search functionality allows users to quickly find the jobs most relevant to their needs.",
+      "Job seekers can apply for jobs with a simple click, saving time and effort. Additionally, they can bookmark or save job listings they are interested in for later reference. A streamlined job application process ensures that users are kept informed of the status of their applications.",
+      "Applicants can leave reviews and comments on job postings, including nested comments, allowing for detailed discussions about the roles, companies, and experiences. A star-rating system is integrated into job listings, letting users rate their experience with the job or company.",
+      "Employers can create, update, and delete job postings using a simple and intuitive interface. All job-related data is managed via Django REST API, offering a robust and flexible backend.",
+      "Employers can export job data to Excel using Pandas, making it easy to manage job applications, track candidates, and organize hiring processes.",
+      "Job seekers will receive email notifications upon applying for jobs, confirming their application submission. Additionally, an email notification system is in place for password resets, ensuring that users can easily recover their accounts.",
+      "Job seekers and Employers can keep track of all the jobs they’ve applied to, view the status of each application, and stay informed of any updates or responses from employers.",
     ],
   },
 ];

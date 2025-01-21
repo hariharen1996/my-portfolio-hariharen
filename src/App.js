@@ -3,6 +3,7 @@ import "./App.css";
 import { Suspense, lazy } from "react";
 import FallbackLoad from "./components/FallbackLoad";
 import Layout from "./components/Layout";
+import Chatbot from "./components/Chatbot";
 
 const Home = lazy(() => import("./components/Home"));
 const About = lazy(() => import("./components/About"));
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+          <Chatbot />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route

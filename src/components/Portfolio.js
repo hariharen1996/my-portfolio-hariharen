@@ -41,7 +41,9 @@ const Portfolio = () => {
           ))}
         </div>
         {filteredData().length === 0 ? (
-          <Loading />
+          <>
+            <Loading />
+          </> 
         ) : (
           <div className="my-10 mx-2 flex justify-center items-start items-stretch flex-wrap gap-5">
             {filteredData().map((items) => (

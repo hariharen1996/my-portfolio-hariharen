@@ -1,12 +1,11 @@
 import { TiHtml5 } from "react-icons/ti";
-import { FaCss3Alt, FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
+import { FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import {
   SiRedux,
   SiSqlite,
-  SiFirebase,
   SiJira,
-  SiTailwindcss,
+  SiDjango
 } from "react-icons/si";
 import { FaPython } from "react-icons/fa6";
 
@@ -56,6 +55,12 @@ export const backEnd = [
     icons: <SiSqlite size={30} />,
     color: "bg-gray-700",
   },
+  {
+    id:3,
+    text: "Django",
+    icons: <SiDjango size={30} />,
+    color: "bg-green-700"
+  }
 ];
 
 export const tools = [
