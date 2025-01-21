@@ -8,10 +8,10 @@ const CertContainer = ({ item, showCert, setShowCert }) => {
     setShowCert();
   };
   return (
-    <div className="bg-[#171720] shadow-lg shadow-indigo-500/50 w-[90%] lg:w-[50%] p-2 m-2">
+    <div className="bg-white dark:bg-[#171720] shadow-lg shadow-blue-500/70 dark:shadow-indigo-500/70 w-[90%] lg:w-[50%] p-2 m-2">
       <div className="flex justify-between items-center">
-        <h1 className="text-md md:text-lg">{item.title}</h1>
-        <button onClick={handleShow} className="cursor-pointer">
+        <h1 className="text-md md:text-lg text-black dark:text-white">{item.title}</h1>
+        <button onClick={handleShow} className="cursor-pointer text-black dark:text-white">
           {showCert ? <FaArrowCircleUp /> : <FaArrowCircleDown />}
         </button>
       </div>

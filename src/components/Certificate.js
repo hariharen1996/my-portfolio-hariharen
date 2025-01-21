@@ -22,15 +22,15 @@ const Certificates = () => {
 
   return (
     <div>
-      <div className="font-serif bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
-        <h1 className="text-2xl my-3 md:text-3xl text-center underline">
+      <div className="font-serif bg-[#f1f1f1] dark:bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
+        <h1 className="text-2xl my-3 md:text-3xl text-center underline text-black dark:text-white">
           Certificates
         </h1>
         <div className="flex justify-center items-center my-5">
           <select
             name="lang"
             id="lang"
-            className="bg-gray-900 w-full mx-2 md:w-96 text-white p-2 border rounded-md"
+            className="bg-white dark:bg-gray-900 w-full mx-2 md:w-96 text-black dark:text-white p-2 border rounded-md"
             onChange={onChangeCert}
             value={names}
           >

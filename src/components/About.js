@@ -6,7 +6,7 @@ import AboutContainer from "../pages/AboutContainer";
 const About = () => {
   return (
     <div>
-      <div className="font-serif bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
+      <div className="font-serif bg-[#f1f1f1] dark:bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
         <AboutContainer title={"Work Experince"} details={experience} />
         <AboutContainer
           title={"Volunteer Experience"}

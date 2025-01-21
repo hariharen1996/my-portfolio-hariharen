@@ -2,7 +2,7 @@ import { Audio } from "react-loader-spinner";
 
 const FallbackLoad = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#171730]">
+    <div className="flex justify-center items-center min-h-screen bg-[#1770c8] dark:bg-[#171730]">
       <Audio
         height="80"
         width="80"

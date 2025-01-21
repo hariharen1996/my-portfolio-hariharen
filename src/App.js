@@ -4,6 +4,7 @@ import { Suspense, lazy } from "react";
 import FallbackLoad from "./components/FallbackLoad";
 import Layout from "./components/Layout";
 import Chatbot from "./components/Chatbot";
+import Theme from "./components/Theme";
 
 const Home = lazy(() => import("./components/Home"));
 const About = lazy(() => import("./components/About"));
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+          <Theme />
           <Chatbot />
         <Routes>
           <Route path="/" element={<Layout />}>

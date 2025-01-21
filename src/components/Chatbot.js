@@ -218,14 +218,14 @@ const Chatbot = () => {
   return (
     <>
       <div
-        className="fixed bottom-5 right-5 bg-white-600 text-white p-3 rounded-full cursor-pointer"
+        className="fixed bottom-5 right-5 text-[#1770c8] dark:text-white p-3 rounded-full cursor-pointer"
         onClick={displayChatBot}
       >
         <BsFillChatLeftTextFill size={30} />
       </div>
 
       {isChatOpen && (
-        <div className="fixed bottom-5 right-5 w-[90%] sm:w-[400px] p-5 bg-[#171730] rounded-lg shadow-xl shadow-indigo-500/50 border border-gray-300 rounded-lg shadow-lg">
+        <div className="fixed bottom-5 right-5 w-[90%] sm:w-[400px] p-5 bg-[#171730] rounded-lg shadow-xl shadow-blue-500/70 dark:shadow-indigo-500/70 border border-gray-300 rounded-lg shadow-lg">
           <button
             onClick={closeChatBot}
             className="absolute top-2 right-2 text-xl text-gray-500"

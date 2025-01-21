@@ -25,7 +25,7 @@ const Portfolio = () => {
 
   return (
     <div>
-      <div className="font-serif bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
+      <div className="font-serif bg-[#f1f1f1] dark:bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
         <div className="mx-2 flex flex-wrap justify-center items-center gap-2">
           {tabBtns.map((btn) => (
             <div key={btn.id}>
@@ -33,8 +33,8 @@ const Portfolio = () => {
                 onClick={() => handleTabs(btn.text)}
                 className={`${
                   btn.text === activeTabs
-                    ? "border border-white transition-all bg-cyan-900 text-white text-xs p-2 rounded-md"
-                    : "bg-cyan-900 border border-cyan-700 transition-all text-xs p-2 rounded-md"
+                    ? "border border-white transition-all bg-[#1770f5] dark:bg-cyan-900 text-white text-xs p-2 rounded-md"
+                    : "bg-[#1770c8] dark:bg-cyan-900 border border-white dark:border-cyan-700 transition-all text-xs p-2 rounded-md"
                 } cursor-pointer px-3 p-2 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-80 text-sm`}
               >
                 {btn.btnName}
