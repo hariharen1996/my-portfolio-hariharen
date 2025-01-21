@@ -31,5 +31,6 @@ export const training = [
     title: "NxtWave Disruptive Technologies",
     designation: "Full stack development trainee",
     year: "05/2022 - 12/2022",
+    skills: ["Python", "HTML5", "CSS3", "Javascript",'ReactJS','SQLite'],
   },
 ];

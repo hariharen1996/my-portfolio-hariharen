@@ -44,7 +44,7 @@ const AboutContainer = ({ title, details }) => {
                     {items.skills.map((item) => (
                       <button
                         key={item}
-                        className="p-1 bg-cyan-700 text-xs rounded-md text-white"
+                        className="bg-cyan-900 border border-cyan-700 transition-all text-xs p-2 rounded-md"
                       >
                         {item}
                       </button>

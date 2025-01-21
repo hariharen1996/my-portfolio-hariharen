@@ -5,7 +5,7 @@ export const experience = [
     title: "NatWest Digital Services",
     designation: "Internship Trainee (Quality Analyst)",
     year: "03/2023 - 10/2023",
-    skills: ["Jira", "Confluence", "SQLite", "Manual Testing"],
+    skills: ["Jira", "Confluence", "SQL", "Manual Testing"],
   },
 ];
 

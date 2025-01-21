@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MagnifyingGlass } from "react-loader-spinner";
+import { IoNavigateCircle } from "react-icons/io5";
+
+
 
 const ProjectCard = ({ items }) => {
   return (
@@ -30,17 +33,18 @@ const ProjectCard = ({ items }) => {
         {items.techStach.map((btn) => (
           <button
             key={btn}
-            className="border border-cyan-700 transition-all hover:bg-cyan-700 hover:text-white text-xs p-2 rounded-md text-[#b1b2b3]"
+            className="border border-cyan-700 transition-all bg-cyan-900 text-white text-xs p-2 rounded-md"
           >
             {btn}
           </button>
         ))}
       </div>
       <Link to={`/portfolio-details/${items.id}`} state={JSON.stringify(items)}>
-        <button className="bg-cyan-700 text-xs p-2 rounded-md text-white">
-          View More
-        </button>
+        <a className="mb-2 mt-2 text-md underline bg-cyan-900 text-white">
+          <IoNavigateCircle size={35} />
+        </a>
       </Link>
+
     </div>
   );
 };

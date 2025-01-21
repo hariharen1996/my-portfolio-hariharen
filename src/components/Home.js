@@ -27,7 +27,7 @@ const Home = () => {
             explore new opportunities and contribute to exciting projects.
           </p>
           <Link to={LINKEDIN_URL} target="_blank">
-            <button className="px-3 text-sm my-2 md:px-6 p-2 rounded-lg  bg-cyan-900  hover:border border-white">
+            <button className="px-3 text-sm my-2 md:px-6 p-2 rounded-lg  bg-cyan-900  border border-cyan-700 hover:border-white transition-all">
               Let's connect
             </button>
           </Link>

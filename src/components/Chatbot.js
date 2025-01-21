@@ -267,7 +267,7 @@ const Chatbot = () => {
               value={input}
               onChange={handleInput}
               className="flex-1 p-2 pl-10 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
-              placeholder="Type a message"
+              placeholder="Ask me anything about my work!"
             />
             <button
               type="submit"

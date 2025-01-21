@@ -36,9 +36,9 @@ const Navbar = () => {
             )}
           </div>
           <ul
-            className={`md:mx-2 duration-700 ease-in-out md:flex md:items-center gap-2 md:static absolute pb-2 pt-2 md:pb-0 md:pt-0 bg-[#171721] md:bg-none md:w-auto w-full left-0 pl-3 md:pl-0 md:z-auto z-[-1]  ${
+            className={`md:mx-2 duration-700 ease-in-out md:flex md:items-center gap-4 md:static absolute pb-2 pt-2 md:pb-0 md:pt-0 bg-[#171721] md:bg-none md:w-auto w-full left-0 pl-3 md:pl-0 md:z-auto z-[-1]  ${
               showMenu
-                ? "top-10 opacity-100 transition-opacity"
+                ? "top-10 opacity-100 transition-opacity shadow-xl border border-white shadow-xl shadow-indigo-500/50 md:border-0 md:shadow-none md:shadow-indigo-500/50-none "
                 : "top-[-490px] md:opacity-100 opacity-0 transition-opacity"
             }`}
           >
@@ -46,14 +46,14 @@ const Navbar = () => {
               <NavLink
                 className={({ isActive }) => {
                   return isActive
-                    ? "text-cyan-400"
-                    : "text-white hover:text-cyan-400 transition-all";
+                    ? "text-cyan-600"
+                    : "text-white hover:text-cyan-600 transition-all";
                 }}
                 to={nav.path}
                 key={nav.id}
                 onClick={() => setShowMenu(false)}
               >
-                <li>{nav.pathname}</li>
+                <li className="mb-2 md:mb-0">{nav.pathname}</li>
               </NavLink>
             ))}
           </ul>

@@ -28,12 +28,12 @@ const PortfolioDetails = () => {
           </ul>
           <div className="flex mt-5 gap-2">
             <Link to={parsedObj.github} target="_blank">
-              <button className="border border-cyan-700 transition-all hover:bg-cyan-700 hover:text-white text-xs p-2 rounded-md text-[#b1b2b3]">
+              <button className="bg-cyan-900 border border-cyan-700 hover:border-white transition-all text-xs p-2 rounded-md">
                 View Code
               </button>
             </Link>
             <Link to={parsedObj.projectLink} target="_blank">
-              <button className="border border-cyan-700 transition-all hover:bg-cyan-700 hover:text-white text-xs p-2 rounded-md text-[#b1b2b3]">
+              <button className="bg-cyan-900 border border-cyan-700 hover:border-white transition-all text-xs p-2 rounded-md">
                 View Project
               </button>
             </Link>

@@ -2,6 +2,8 @@ import { useState } from "react";
 import ProjectCard from "../pages/ProjectCard";
 import { projects, tabBtns } from "../utils/projconstants";
 import Loading from "./Loading";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 
 const Portfolio = () => {
   const [activeTabs, setActiveTabs] = useState(tabBtns[0].text);
@@ -31,8 +33,8 @@ const Portfolio = () => {
                 onClick={() => handleTabs(btn.text)}
                 className={`${
                   btn.text === activeTabs
-                    ? "bg-cyan-700"
-                    : "border border-cyan-700"
+                    ? "border border-white transition-all bg-cyan-900 text-white text-xs p-2 rounded-md"
+                    : "bg-cyan-900 border border-cyan-700 transition-all text-xs p-2 rounded-md"
                 } cursor-pointer px-3 p-2 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-80 text-sm`}
               >
                 {btn.btnName}
