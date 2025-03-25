@@ -2,8 +2,6 @@ import { useState } from "react";
 import ProjectCard from "../pages/ProjectCard";
 import { projects, tabBtns } from "../utils/projconstants";
 import Loading from "./Loading";
-import { FaExternalLinkAlt } from "react-icons/fa";
-
 
 const Portfolio = () => {
   const [activeTabs, setActiveTabs] = useState(tabBtns[0].text);
@@ -25,27 +23,29 @@ const Portfolio = () => {
 
   return (
     <div>
+      <h1 className="text-4xl md:text-[4rem] font-bold text-gray-400 dark:text-gray-500 absolute top-12 xl:top-[35rem] left-1/2 xl:left-32 xl:-rotate-90 transform xl:origin-left opacity-30 whitespace-nowrap -translate-x-1/2 xl:translate-x-0">
+        PORTFOLIO
+      </h1>
+
       <div className="font-serif bg-[#f1f1f1] dark:bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
         <div className="mx-2 flex flex-wrap justify-center items-center gap-2">
           {tabBtns.map((btn) => (
-            <div key={btn.id}>
-              <button
-                onClick={() => handleTabs(btn.text)}
-                className={`${
-                  btn.text === activeTabs
-                    ? "border border-white transition-all bg-[#1770f5] dark:bg-cyan-900 text-white text-xs p-2 rounded-md"
-                    : "bg-[#1770c8] dark:bg-cyan-900 border border-white dark:border-cyan-700 transition-all text-xs p-2 rounded-md"
-                } cursor-pointer px-3 p-2 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-80 text-sm`}
-              >
-                {btn.btnName}
-              </button>
-            </div>
+            <button
+              key={btn.id}
+              onClick={() => handleTabs(btn.text)}
+              className={`${
+                btn.text === activeTabs
+                  ? "bg-[#000c66] text-white border border-[#4c8bf5]"
+                  : "bg-[#0000c8] dark:bg-[#171717] dark:border-white text-white border border-transparent"
+              } transition-all text-xs p-2 rounded-md cursor-pointer px-4 py-2 shadow-blue-500/70 dark:shadow-indigo-500/70 shadow-lg hover:scale-105`}
+            >
+              {btn.btnName}
+            </button>
           ))}
         </div>
+
         {filteredData().length === 0 ? (
-          <>
-            <Loading />
-          </> 
+          <Loading />
         ) : (
           <div className="my-10 mx-2 flex justify-center items-start items-stretch flex-wrap gap-5">
             {filteredData().map((items) => (

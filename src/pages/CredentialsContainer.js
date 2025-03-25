@@ -1,17 +1,21 @@
 import React from "react";
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
 import { MagnifyingGlass } from "react-loader-spinner";
-import { Link } from "react-router-dom";
 
-const CertContainer = ({ item, showCert, setShowCert }) => {
+const CredentialsContainer = ({ item, showCert, setShowCert }) => {
   const handleShow = () => {
     setShowCert();
   };
   return (
-    <div className="bg-white dark:bg-[#171720] shadow-lg shadow-blue-500/70 dark:shadow-indigo-500/70 w-[90%] lg:w-[50%] p-2 m-2">
+    <div className="bg-white dark:bg-[#171720] shadow-lg shadow-blue-500/70 dark:shadow-indigo-500/70 shadow-xl w-[90%] lg:w-[50%] p-2 m-2">
       <div className="flex justify-between items-center">
-        <h1 className="text-md md:text-lg text-black dark:text-white">{item.title}</h1>
-        <button onClick={handleShow} className="cursor-pointer text-black dark:text-white">
+        <h1 className="text-md md:text-lg text-black dark:text-white">
+          {item.title}
+        </h1>
+        <button
+          onClick={handleShow}
+          className="cursor-pointer text-black dark:text-white"
+        >
           {showCert ? <FaArrowCircleUp /> : <FaArrowCircleDown />}
         </button>
       </div>
@@ -41,4 +45,4 @@ const CertContainer = ({ item, showCert, setShowCert }) => {
   );
 };
 
-export default CertContainer;
+export default CredentialsContainer;

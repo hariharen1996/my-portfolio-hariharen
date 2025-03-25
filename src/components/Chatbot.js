@@ -98,6 +98,12 @@ const Chatbot = () => {
     ) {
       chatResponse = "Navigating to Skills page...";
       setTimeout(() => navigate("/skills"), 1000);
+    } else if (input.toLowerCase().includes("home".toLowerCase())) {
+      chatResponse = "Navigating to home page...";
+      setTimeout(() => navigate("/"), 1000);
+    } else if (input.toLowerCase().includes("career".toLowerCase())) {
+      chatResponse = "Navigating to career page...";
+      setTimeout(() => navigate("/career"), 1000);
     } else if (
       input.toLowerCase().includes("portfolio".toLowerCase()) ||
       input.toLowerCase().includes("projects".toLowerCase()) ||
@@ -123,41 +129,41 @@ const Chatbot = () => {
         "Here are some of the projects I've worked on. Navigating to the portfolio page...";
       setTimeout(() => navigate("/portfolio"), 1000);
     } else if (
-      input.toLowerCase().includes("certificates".toLowerCase()) ||
-      input.toLowerCase().includes("certificate".toLowerCase()) ||
+      input.toLowerCase().includes("credentials".toLowerCase()) ||
+      input.toLowerCase().includes("credentials".toLowerCase()) ||
       input
         .toLowerCase()
-        .includes("what certificates do you have".toLowerCase()) ||
-      input.toLowerCase().includes("show me your certificates".toLowerCase()) ||
-      input.toLowerCase().includes("certificate details".toLowerCase()) ||
+        .includes("what credentials do you have".toLowerCase()) ||
+      input.toLowerCase().includes("show me your credentials".toLowerCase()) ||
+      input.toLowerCase().includes("credentials details".toLowerCase()) ||
       input
         .toLowerCase()
-        .includes("have you earned any certificates".toLowerCase()) ||
+        .includes("have you earned any credentials".toLowerCase()) ||
       input
         .toLowerCase()
-        .includes("what certifications do you hold".toLowerCase()) ||
-      input.toLowerCase().includes("certification".toLowerCase()) ||
+        .includes("what credentials do you hold".toLowerCase()) ||
+      input.toLowerCase().includes("credential".toLowerCase()) ||
       input.toLowerCase().includes("certified in".toLowerCase()) ||
-      input.toLowerCase().includes("share your certificates".toLowerCase()) ||
+      input.toLowerCase().includes("share your credentials".toLowerCase()) ||
       input
         .toLowerCase()
-        .includes("provide certificate information".toLowerCase()) ||
-      input.toLowerCase().includes("show your certifications".toLowerCase()) ||
-      input.toLowerCase().includes("list of certificates".toLowerCase()) ||
+        .includes("provide credentials information".toLowerCase()) ||
+      input.toLowerCase().includes("show your credentials".toLowerCase()) ||
+      input.toLowerCase().includes("list of credentials".toLowerCase()) ||
       input
         .toLowerCase()
-        .includes("what certifications have you obtained".toLowerCase()) ||
+        .includes("what credentials have you obtained".toLowerCase()) ||
       input
         .toLowerCase()
-        .includes("where are your certificates".toLowerCase()) ||
+        .includes("where are your credentials".toLowerCase()) ||
       input
         .toLowerCase()
-        .includes("tell me about your certifications".toLowerCase()) ||
-      input.toLowerCase().includes("any certificates".toLowerCase()) ||
-      input.toLowerCase().includes("certificate information".toLowerCase())
+        .includes("tell me about your credentials".toLowerCase()) ||
+      input.toLowerCase().includes("any credentials".toLowerCase()) ||
+      input.toLowerCase().includes("credentials information".toLowerCase())
     ) {
-      chatResponse = "Navigating to Certificates page...";
-      setTimeout(() => navigate("/certificate"), 1000);
+      chatResponse = "Navigating to Credentials page...";
+      setTimeout(() => navigate("/credentials"), 1000);
     } else if (
       input.toLowerCase().includes("contact".toLowerCase()) ||
       input.toLowerCase().includes("how to contact".toLowerCase()) ||
@@ -218,14 +224,14 @@ const Chatbot = () => {
   return (
     <>
       <div
-        className="fixed bottom-5 right-5 text-[#1770c8] dark:text-white p-3 rounded-full cursor-pointer"
+        className="bounce z-20 fixed bottom-5 right-5 p-3 rounded-full cursor-pointer bg-[#00008b] dark:bg-[#171717] dark:border-white border border-cyan-700 hover:border-white transition-all shadow-lg shadow-[#00008b]/50 dark:shadow-indigo-500/70"
         onClick={displayChatBot}
       >
-        <BsFillChatLeftTextFill size={30} />
+        <BsFillChatLeftTextFill size={30} className="text-white" />
       </div>
 
       {isChatOpen && (
-        <div className="fixed bottom-5 right-5 w-[90%] sm:w-[400px] p-5 bg-[#171730] rounded-lg shadow-xl shadow-blue-500/70 dark:shadow-indigo-500/70 border border-gray-300 rounded-lg shadow-lg">
+        <div className="z-20 fixed bottom-5 right-5 w-[90%] sm:w-[400px] p-5 bg-[#171730] rounded-lg shadow-xl shadow-blue-500/70 dark:shadow-indigo-500/70 border border-gray-300 rounded-lg shadow-lg">
           <button
             onClick={closeChatBot}
             className="absolute top-2 right-2 text-xl text-gray-500"
@@ -260,14 +266,14 @@ const Chatbot = () => {
           </div>
           <form
             onSubmit={handleSubmit}
-            className="relative flex items-center space-x-2"
+            className="relative flex items-center space-x-2 w-full"
           >
             <input
               type="text"
               value={input}
               onChange={handleInput}
-              className="flex-1 p-2 pl-10 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
-              placeholder="Ask me anything about my work!"
+              className="flex-1 p-2 pl-10 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 w-full"
+              placeholder="Type your question here..."
             />
             <button
               type="submit"

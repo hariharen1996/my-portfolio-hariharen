@@ -11,17 +11,22 @@ export const navItems = [
   },
   {
     id: 3,
+    path: "/career",
+    pathname: "Career",
+  },
+  {
+    id: 4,
     path: "/skills",
     pathname: "Skills",
   },
   {
-    id: 4,
+    id: 5,
     path: "/portfolio",
     pathname: "Portfolio",
   },
   {
-    id: 5,
-    path: "/certificate",
-    pathname: "Certificates",
+    id: 6,
+    path: "/credentials",
+    pathname: "Credentials",
   },
 ];

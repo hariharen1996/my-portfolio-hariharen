@@ -1,9 +1,9 @@
 import React from "react";
 import { accCert, langOptions } from "../utils/constants";
 import { useState } from "react";
-import CertContainer from "../pages/CertContainer";
+import CertContainer from "../pages/CredentialsContainer";
 
-const Certificates = () => {
+const Credentials = () => {
   const [show, setShow] = useState(0);
   const [names, setNames] = useState(langOptions[0].langText);
 
@@ -23,8 +23,8 @@ const Certificates = () => {
   return (
     <div>
       <div className="font-serif bg-[#f1f1f1] dark:bg-[#171730] w-full min-h-screen text-white pt-20 pb-20">
-        <h1 className="text-2xl my-3 md:text-3xl text-center underline text-black dark:text-white">
-          Certificates
+        <h1 className="text-4xl md:text-[4rem] font-bold text-gray-400 dark:text-gray-500 absolute top-12 lg:top-[35rem] left-1/2 lg:left-32 lg:-rotate-90 transform lg:origin-left opacity-30 whitespace-nowrap -translate-x-1/2 lg:translate-x-0">
+          CREDENTIALS
         </h1>
         <div className="flex justify-center items-center my-5">
           <select
@@ -60,4 +60,4 @@ const Certificates = () => {
   );
 };
 
-export default Certificates;
+export default Credentials;

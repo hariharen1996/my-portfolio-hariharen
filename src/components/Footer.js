@@ -4,7 +4,7 @@ import { GITHUB_URL, LINKEDIN_URL } from "../utils/constants";
 
 const Footer = () => {
   return (
-    <div className=" flex flex-wrap shadow-lg gap-2 justify-center items-center bg-[#1770c8] dark:bg-[#171721] p-2 text-center">
+    <div className=" flex flex-wrap shadow-lg gap-2 justify-center items-center bg-[#00008b] dark:bg-[#171721] p-2 text-center">
       <p className="text-white font-serif text-sm sm:text-md">
         Created by &copy; Hariharen | 2025{" "}
       </p>

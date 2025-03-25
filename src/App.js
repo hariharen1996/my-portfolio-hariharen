@@ -1,24 +1,25 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import { Suspense, lazy } from "react";
 import FallbackLoad from "./components/FallbackLoad";
 import Layout from "./components/Layout";
 import Chatbot from "./components/Chatbot";
 import Theme from "./components/Theme";
+import "./index.css";
 
 const Home = lazy(() => import("./components/Home"));
 const About = lazy(() => import("./components/About"));
+const Career = lazy(() => import("./components/Career"));
 const Skills = lazy(() => import("./components/Skills"));
 const Portfolio = lazy(() => import("./components/Portfolio"));
-const PortfolioDetails = lazy(() => import("./pages/PortfolioDetails"));
-const Certificates = lazy(() => import("./components/Certificate"));
+const Credentials = lazy(() => import("./components/Credentials"));
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-          <Theme />
-          <Chatbot />
+        <Theme />
+        <Chatbot />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route
@@ -34,6 +35,14 @@ function App() {
               element={
                 <Suspense fallback={<FallbackLoad />}>
                   <About />
+                </Suspense>
+              }
+            />
+            <Route
+              path="career"
+              element={
+                <Suspense fallback={<FallbackLoad />}>
+                  <Career />
                 </Suspense>
               }
             />
@@ -54,18 +63,20 @@ function App() {
               }
             />
             <Route
-              path="portfolio-details/:id"
+              path="credentials"
               element={
                 <Suspense fallback={<FallbackLoad />}>
-                  <PortfolioDetails />
+                  <Credentials />
                 </Suspense>
               }
             />
             <Route
-              path="certificate"
+              path="*"
               element={
                 <Suspense fallback={<FallbackLoad />}>
-                  <Certificates />
+                  <div>
+                    <Navigate to="/" replace />
+                  </div>
                 </Suspense>
               }
             />
