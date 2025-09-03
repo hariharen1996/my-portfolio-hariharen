@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { MagnifyingGlass } from "react-loader-spinner";
 import { FaGithub } from "react-icons/fa";
 import { RiLiveFill } from "react-icons/ri";
 import { MdSpeakerNotes } from "react-icons/md";
@@ -13,14 +12,7 @@ const ProjectCard = ({ items }) => {
       <div className="relative overflow-hidden">
         {!items.image ? (
           <div className="flex justify-center items-center h-48 bg-gray-200 dark:bg-gray-800">
-            <MagnifyingGlass
-              visible={true}
-              height="80"
-              width="80"
-              ariaLabel="MagnifyingGlass-loading"
-              glassColor="#c0efff"
-              color="#e15b64"
-            />
+            Loading...
           </div>
         ) : (
           <img

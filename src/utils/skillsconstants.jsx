@@ -1,3 +1,4 @@
+import React from "react";
 import { TiHtml5 } from "react-icons/ti";
 import { FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";

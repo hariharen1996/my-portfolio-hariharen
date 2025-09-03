@@ -1,3 +1,4 @@
+import React from 'react';
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { GITHUB_URL, LINKEDIN_URL } from "../utils/constants";

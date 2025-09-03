@@ -1,6 +1,5 @@
 import React from "react";
 import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
-import { MagnifyingGlass } from "react-loader-spinner";
 
 const CredentialsContainer = ({ item, showCert, setShowCert }) => {
   const handleShow = () => {
@@ -22,16 +21,7 @@ const CredentialsContainer = ({ item, showCert, setShowCert }) => {
       {showCert && (
         <div>
           {!item.imageURL ? (
-            <MagnifyingGlass
-              visible={true}
-              height="80"
-              width="80"
-              ariaLabel="MagnifyingGlass-loading"
-              wrapperStyle={{}}
-              wrapperClass="MagnifyingGlass-wrapper"
-              glassColor="#c0efff"
-              color="#e15b64"
-            />
+            <p>Loading...</p>
           ) : (
             <img
               src={item.imageURL}
