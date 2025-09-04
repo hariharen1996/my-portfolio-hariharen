@@ -8,8 +8,8 @@ import Chatbot from "./components/Chatbot";
 import Theme from "./components/Theme";
 import "./index.css";
 
-const Home = lazy(() => import("./components/Home"));
-const About = lazy(() => import("./components/About"));
+const Home = lazy(() => import("./pages/Home/Home"));
+const About = lazy(() => import("./pages/About/About"));
 const Career = lazy(() => import("./components/Career"));
 const Skills = lazy(() => import("./components/Skills"));
 const Portfolio = lazy(() => import("./components/Portfolio"));
