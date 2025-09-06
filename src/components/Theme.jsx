@@ -24,7 +24,7 @@ const Theme = () => {
     }
   }, [theme]);
   return (
-    <div className="fixed top-16 right-5 z-10">
+    <div className="fixed top-16 right-5 z-50">
       <button
         onClick={() => setTheme(!theme)}
         className="p-2 text-black dark:text-white"

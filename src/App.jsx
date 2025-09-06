@@ -10,10 +10,10 @@ import "./index.css";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const About = lazy(() => import("./pages/About/About"));
-const Career = lazy(() => import("./components/Career"));
-const Skills = lazy(() => import("./components/Skills"));
+const Career = lazy(() => import("./pages/Career/Career"));
+const Skills = lazy(() => import("./pages/Skills/Skills"));
 const Portfolio = lazy(() => import("./components/Portfolio"));
-const Credentials = lazy(() => import("./components/Credentials"));
+const Credentials = lazy(() => import("./pages/Credentials/Credentials"));
 
 function App() {
   return (
